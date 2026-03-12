@@ -1,0 +1,35 @@
+.cargando {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.cargando__spinner {
+  width: 40px;
+  height: 40px;
+  border: 4px solid #f3f3f3;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+.cargando--azul .cargando__spinner {
+  border-top: 4px solid #3498db;
+}
+
+.cargando--verde .cargando__spinner {
+  border-top: 4px solid #2ecc71;
+}
+
+.cargando--rojo .cargando__spinner {
+  border-top: 4px solid #e74c3c;
+}
+
+.cargando--amarillo .cargando__spinner {
+  border-top: 4px solid #f1c40f;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
